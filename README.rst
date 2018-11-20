@@ -1,5 +1,5 @@
 Bio2BEL ADEPTUS |build|
-==================================================
+=======================
 
 Installation |pypi_version| |python_versions| |pypi_license|
 ------------------------------------------------------------
@@ -21,6 +21,8 @@ Setup
 -----
 ADEPTUS can be downloaded and populated from either the
 Python REPL or the automatically installed command line utility.
+
+** Note: this functionality has not been added yet **
 
 Python REPL
 ~~~~~~~~~~~
