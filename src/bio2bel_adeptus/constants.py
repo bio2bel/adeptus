@@ -14,7 +14,7 @@ __all__ = [
     'ADEPTUS_DATA_PATH',
 ]
 
-VERSION = '0.0.1-dev'
+VERSION = '0.0.1'
 MODULE_NAME = 'bio2bel_adeptus'
 DATA_DIR = get_data_dir(MODULE_NAME)
 
