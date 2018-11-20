@@ -1,5 +1,9 @@
 Bio2BEL ADEPTUS |build|
 =======================
+Converts ADEPTUS disease-differential gene expression signatures to BEL.
+
+Big thanks to Daniel Himmelstein for preprocessing this data in his repository at:
+https://github.com/dhimmel/adeptus
 
 Installation |pypi_version| |python_versions| |pypi_license|
 ------------------------------------------------------------
@@ -19,10 +23,7 @@ or from the latest code on `GitHub <https://github.com/bio2bel/adeptus>`_ with:
 
 Setup
 -----
-ADEPTUS can be downloaded and populated from either the
-Python REPL or the automatically installed command line utility.
-
-** Note: this functionality has not been added yet **
+This repository does not currently cache the data, but only wraps conversion to BEL.
 
 Python REPL
 ~~~~~~~~~~~
@@ -30,13 +31,8 @@ Python REPL
 
     >>> import bio2bel_adeptus
     >>> adeptus_manager = bio2bel_adeptus.Manager()
-    >>> adeptus_manager.populate()
+    >>> graph = adeptus_manager.to_bel()
 
-Command Line Utility
-~~~~~~~~~~~~~~~~~~~~
-.. code-block:: sh
-
-    bio2bel_adeptus populate
 
 
 .. |build| image:: https://travis-ci.com/bio2bel/adeptus.svg?branch=master
