@@ -53,7 +53,8 @@ class Manager(BELManagerMixin):
 
         df = get_adeptus_df()
 
-        for _, (disease_doid, disease_name, entrez_id, entrez_name, pb_roc, pn_roc, direction) in tqdm(df.iterrows()):
+        it = tqdm(df.iterrows(), desc='ADEPTUS to BEL', total=len(df.index))
+        for _, (disease_doid, disease_name, entrez_id, entrez_name, pb_roc, pn_roc, direction) in it:
             disease = pybel.dsl.Pathology(
                 namespace='doid',
                 name=disease_name,
