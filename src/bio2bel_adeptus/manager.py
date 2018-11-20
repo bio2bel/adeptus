@@ -4,12 +4,12 @@
 
 from typing import Mapping
 
+from tqdm import tqdm
+
 import pybel.dsl
 from bio2bel.manager.bel_manager import BELManagerMixin
 from pybel import BELGraph
 from pybel.constants import NEGATIVE_CORRELATION, POSITIVE_CORRELATION
-from tqdm import tqdm
-
 from .constants import MODULE_NAME
 from .models import Base
 from .parser import get_adeptus_df
@@ -21,7 +21,7 @@ class Manager(BELManagerMixin):
     module_name = MODULE_NAME
     _base = Base
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args, **kwargs):  # noqa: D107
         pass
 
     @classmethod
