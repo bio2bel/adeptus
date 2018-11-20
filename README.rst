@@ -40,7 +40,7 @@ Command Line Utility
 
 
 .. |build| image:: https://travis-ci.com/bio2bel/adeptus.svg?branch=master
-    :target: https://travis-ci.org/bio2bel/adeptus
+    :target: https://travis-ci.com/bio2bel/adeptus
     :alt: Build Status
 
 .. |documentation| image:: http://readthedocs.org/projects/bio2bel-adeptus/badge/?version=latest
