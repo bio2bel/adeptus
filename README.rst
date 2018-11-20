@@ -55,6 +55,6 @@ Python REPL
 
 .. |pypi_license| image:: https://img.shields.io/pypi/l/bio2bel_adeptus.svg
     :alt: MIT License
-    
+
 .. |zenodo| image:: https://zenodo.org/badge/158358036.svg
    :target: https://zenodo.org/badge/latestdoi/158358036
