@@ -19,7 +19,7 @@ class Manager(BELManagerMixin):
     """Disease-specific differential gene expression."""
 
     module_name = MODULE_NAME
-    _base = Base
+    _base = None
 
     def __init__(self, *args, **kwargs):  # noqa: D107
         self.graph = get_graph()
