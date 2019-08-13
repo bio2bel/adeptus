@@ -92,7 +92,7 @@ def get_graph(use_tqdm: bool = False) -> BELGraph:
         gene = Rna(
             namespace='ncbigene',
             name=entrez_name,
-            identifier=entrez_id,
+            identifier=str(entrez_id),
         )
 
         relation = POSITIVE_CORRELATION if direction == 'up' else NEGATIVE_CORRELATION
@@ -104,7 +104,7 @@ def get_graph(use_tqdm: bool = False) -> BELGraph:
             citation='26261215',
             evidence='ADEPTUS database',
             annotations={
-                'bio2bel': 'adeptus',
+                'bio2bel': MODULE_NAME,
                 'ADEPTUS_PB_ROC': pb_roc,
                 'ADEPTUS_PN_ROC': pn_roc,
             }
